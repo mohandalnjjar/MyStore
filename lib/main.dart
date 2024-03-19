@@ -10,9 +10,11 @@ class MyStore extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      title: 'My Store',
       debugShowCheckedModeBanner: false,
-      home: HomeView(),
+      theme: ThemeData(scaffoldBackgroundColor: Colors.blueAccent),
+      home: const HomeView(),
     );
   }
 }

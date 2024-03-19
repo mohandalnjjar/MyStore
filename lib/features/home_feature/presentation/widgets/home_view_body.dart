@@ -7,6 +7,22 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(child: Text("this is me mohannd Alnjjar"));
+    return Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Text("this is me mohannd Alnjjar"),
+          ElevatedButton(
+            onPressed: () {},
+            child: const Icon(Icons.dark_mode),
+          ),
+          SwitchListTile(
+            title: const Text('theme'),
+            value: true,
+            onChanged: (value) {},
+          ),
+        ],
+      ),
+    );
   }
 }
