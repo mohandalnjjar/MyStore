@@ -8,8 +8,9 @@ abstract class ThemeRepo {
       scaffoldBackgroundColor: isDarkTheme
           ? AppColors.kDarktScaffoldColor
           : AppColors.kLightScaffoldColor,
-      cardColor:
-          isDarkTheme ? AppColors.kdarkCardColor : AppColors.kdarkCardColor,
+      cardColor: isDarkTheme
+          ? AppColors.kdarkCardColor
+          : AppColors.kLightScaffoldColor,
       brightness: isDarkTheme ? Brightness.dark : Brightness.light,
     );
   }
