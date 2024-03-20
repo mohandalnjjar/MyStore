@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shop/features/home_feature/presentation/views/home_view.dart';
-import 'package:shop/features/theme/manager/theme_provider/theme_provider.dart';
-import 'package:shop/features/theme/repos/app_theme.dart';
+import 'package:shop/features/home_feature/presentation/views/root_view.dart';
+import 'package:shop/features/theme_Feature/manager/theme_provider/theme_provider.dart';
+import 'package:shop/features/theme_Feature/data/repos/app_theme.dart';
 
 void main(List<String> args) {
   runApp(const MyStore());
@@ -16,7 +16,7 @@ class MyStore extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (context) => ThemeProvider(),
+          create: (context) => ThemeProvider()..getTheme(),
         )
       ],
       child: Consumer<ThemeProvider>(builder: (context, themeProvider, child) {
@@ -25,7 +25,7 @@ class MyStore extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           theme: ThemeRepo.Theme(
               isDarkTheme: themeProvider.getDarkTheme, context: context),
-          home: const HomeView(),
+          home: const RootView(),
         );
       }),
     );
