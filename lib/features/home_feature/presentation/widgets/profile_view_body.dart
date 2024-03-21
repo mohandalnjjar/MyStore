@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:iconly/iconly.dart';
 import 'package:provider/provider.dart';
 import 'package:shop/core/utils/app_assets.dart';
 import 'package:shop/core/utils/widgets/app_styles.dart';
@@ -114,11 +115,18 @@ class ProfileViweBody extends StatelessWidget {
             themeProvider.setDarkTheme(themeValue: value);
           },
         ),
-        ElevatedButton.icon(
-          onPressed: () {},
-          icon: const Icon(Icons.login),
-          label: const Text('Login'),
+        const Spacer(),
+        Center(
+          child: ElevatedButton.icon(
+            onPressed: () {},
+            icon: const Icon(IconlyLight.logout),
+            label: const Text('Logout'),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+            ),
+          ),
         ),
+        const Spacer(),
       ],
     );
   }
