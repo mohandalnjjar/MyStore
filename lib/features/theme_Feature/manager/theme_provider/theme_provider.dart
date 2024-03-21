@@ -5,6 +5,8 @@ class ThemeProvider extends ChangeNotifier {
   static const themeStatus = "themeStatus";
   bool _darkTheme = false;
   bool get getDarkTheme => _darkTheme;
+
+  
   Future<void> setDarkTheme({required bool themeValue}) async {
     SharedPreferences pref = await SharedPreferences.getInstance();
 
