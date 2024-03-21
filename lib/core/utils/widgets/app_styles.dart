@@ -6,15 +6,18 @@ abstract class AppStyles {
       fontSize: 24,
       overflow: TextOverflow.ellipsis);
 
-
-       static const TextStyle styleSemiBold20 = TextStyle(
+  static const TextStyle styleSemiBold20 = TextStyle(
       fontWeight: FontWeight.w600,
       fontSize: 20,
       overflow: TextOverflow.ellipsis);
 
-      
-       static const TextStyle styleSemiBold18 = TextStyle(
+  static const TextStyle styleSemiBold18 = TextStyle(
       fontWeight: FontWeight.w600,
       fontSize: 18,
       overflow: TextOverflow.ellipsis);
+  static const TextStyle styleSemiBold35 = TextStyle(
+      fontWeight: FontWeight.w600,
+      fontSize: 35,
+      overflow: TextOverflow.ellipsis,
+      color: Colors.red);
 }
