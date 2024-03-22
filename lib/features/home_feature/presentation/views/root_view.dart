@@ -59,7 +59,16 @@ class _RootViewState extends State<RootView> {
             selectedIcon: Icon(IconlyBold.search),
           ),
           NavigationDestination(
-            icon: Icon(IconlyLight.bag_2),
+            icon: Badge(
+              label: FittedBox(
+                child: Text(
+                  '6',
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
+              backgroundColor: Colors.red,
+              child: Icon(IconlyLight.bag_2),
+            ),
             label: 'Cart',
             selectedIcon: Icon(IconlyBold.bag_2),
           ),

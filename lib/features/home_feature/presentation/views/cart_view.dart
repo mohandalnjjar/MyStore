@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:shop/core/utils/app_assets.dart';
+import 'package:shop/features/home_feature/presentation/widgets/cart_buttom_checkout.dart';
 import 'package:shop/features/home_feature/presentation/widgets/empty_cart_view_body.dart';
 import 'package:shop/features/home_feature/presentation/widgets/not_empty_cart_view_body.dart';
 
@@ -27,6 +28,7 @@ class CartView extends StatelessWidget {
               ],
             ),
       body: isEmpty ? const EmptyCartViewBody() : const NotEMptyCartViewBody(),
+      bottomSheet: isEmpty ? null : const CartCheckOut(),
     );
   }
 }

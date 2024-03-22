@@ -9,7 +9,7 @@ class NotEMptyCartViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: 20,
+      itemCount: 9,
       itemBuilder: (context, index) => const Center(
         child: CartItem(),
       ),

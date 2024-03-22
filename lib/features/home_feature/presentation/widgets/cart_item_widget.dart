@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iconly/iconly.dart';
 import 'package:shop/core/utils/widgets/app_styles.dart';
+import 'package:shop/features/home_feature/presentation/widgets/quantity_buttom_sheet.dart';
 
 class CartItem extends StatelessWidget {
   const CartItem({super.key});
@@ -42,7 +43,7 @@ class CartItem extends StatelessWidget {
                             child: const Text(
                               'hello this is me mohana d alnjjar an this si my app',
                               maxLines: 2,
-                              style: AppStyles.styleSemiReqular19,
+                              style: AppStyles.styleReqular19,
                             ),
                           ),
                         ],
@@ -54,15 +55,18 @@ class CartItem extends StatelessWidget {
                     children: [
                       const Text(
                         r'$103',
-                        style: TextStyle(
-                          color: Colors.green,
-                          fontWeight: FontWeight.w600,
-                          fontSize: 16,
-                        ),
+                        style: AppStyles.styleReqular16,
                       ),
                       const Spacer(),
                       IconButton(
-                        onPressed: () {},
+                        onPressed: () async {
+                          await showModalBottomSheet(
+                            context: context,
+                            builder: (context) => const QuatityButtomSheet(),
+                            backgroundColor:
+                                Theme.of(context).scaffoldBackgroundColor,
+                          );
+                        },
                         icon: const Icon(
                           IconlyLight.plus,
                         ),
