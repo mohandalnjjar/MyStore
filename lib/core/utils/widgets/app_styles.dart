@@ -20,4 +20,10 @@ abstract class AppStyles {
       fontSize: 35,
       overflow: TextOverflow.ellipsis,
       color: Colors.red);
+
+  static const TextStyle styleSemiReqular19 = TextStyle(
+    fontWeight: FontWeight.w400,
+    fontSize: 19,
+    overflow: TextOverflow.ellipsis,
+  );
 }

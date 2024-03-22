@@ -12,8 +12,11 @@ class ProfileView extends StatelessWidget {
       appBar: AppBar(
         leadingWidth: 80,
         leading: Image.asset(AppAssets.shoppingCart),
-        title: const CustomSHimmerText(
-          title: 'HnoOd Store',
+        title: const Align(
+          alignment: Alignment.centerRight,
+          child: CustomSHimmerText(
+            title: 'HnoOd Store',
+          ),
         ),
       ),
       body: const ProfileViweBody(),

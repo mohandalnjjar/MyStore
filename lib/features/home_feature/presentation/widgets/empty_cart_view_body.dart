@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:shop/core/utils/app_assets.dart';
 import 'package:shop/core/utils/widgets/app_styles.dart';
 
-class CartViewBody extends StatelessWidget {
-  const CartViewBody({
+class EmptyCartViewBody extends StatelessWidget {
+  const EmptyCartViewBody({
     super.key,
   });
 
