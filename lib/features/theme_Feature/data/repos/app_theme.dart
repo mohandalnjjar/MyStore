@@ -17,6 +17,27 @@ abstract class ThemeRepo {
             ? AppColors.kDarktScaffoldColor
             : AppColors.kLightScaffoldColor,
       ),
+      inputDecorationTheme: InputDecorationTheme(
+        contentPadding: const EdgeInsets.all(15),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(13),
+          borderSide: const BorderSide(
+            color: Colors.blue,
+          ),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(13),
+          borderSide: const BorderSide(
+            color: Colors.blue,
+          ),
+        ),
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(13),
+          borderSide: const BorderSide(
+            color: Colors.blue,
+          ),
+        ),
+      ),
     );
   }
 }
