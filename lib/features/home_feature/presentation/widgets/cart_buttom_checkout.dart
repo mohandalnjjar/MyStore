@@ -43,7 +43,7 @@ class CartCheckOut extends StatelessWidget {
                     ),
                     Text(
                       r'200.0$',
-                      style: AppStyles.styleReqular16
+                      style: AppStyles.styleReqularGreen16
                           .copyWith(fontWeight: FontWeight.w400, fontSize: 18),
                     ),
                   ],

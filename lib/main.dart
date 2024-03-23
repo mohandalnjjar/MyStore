@@ -23,7 +23,7 @@ class MyStore extends StatelessWidget {
         return MaterialApp(
           title: 'My Store',
           debugShowCheckedModeBanner: false,
-          theme: ThemeRepo.Theme(
+          theme: ThemeRepo.theme(
               isDarkTheme: themeProvider.getDarkTheme, context: context),
           home: const RootView(),
         );

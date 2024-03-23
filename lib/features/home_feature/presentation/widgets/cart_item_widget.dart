@@ -55,7 +55,7 @@ class CartItem extends StatelessWidget {
                     children: [
                       const Text(
                         r'$103',
-                        style: AppStyles.styleReqular16,
+                        style: AppStyles.styleReqularGreen16,
                       ),
                       const Spacer(),
                       IconButton(

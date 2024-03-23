@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:shop/core/utils/constance.dart';
 
 abstract class ThemeRepo {
-  static ThemeData Theme(
+  static ThemeData theme(
       {required bool isDarkTheme, required BuildContext context}) {
     return ThemeData(
       scaffoldBackgroundColor: isDarkTheme
@@ -17,6 +17,9 @@ abstract class ThemeRepo {
             ? AppColors.kDarktScaffoldColor
             : AppColors.kLightScaffoldColor,
       ),
+
+
+      
       inputDecorationTheme: InputDecorationTheme(
         contentPadding: const EdgeInsets.all(15),
         enabledBorder: OutlineInputBorder(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
 import 'package:shop/core/utils/app_assets.dart';
+import 'package:shop/core/utils/widgets/custom_shimmer_text.dart';
 import 'package:shop/features/home_feature/presentation/widgets/cart_buttom_checkout.dart';
 import 'package:shop/features/home_feature/presentation/widgets/empty_cart_view_body.dart';
 import 'package:shop/features/home_feature/presentation/widgets/not_empty_cart_view_body.dart';
@@ -18,8 +19,7 @@ class CartView extends StatelessWidget {
           : AppBar(
               leadingWidth: 80,
               leading: Image.asset(AppAssets.shoppingCart),
-              title: const Text('Shopping Basket'),
-              centerTitle: true,
+              title: const CustomSHimmerText(title: 'Basket'),
               actions: [
                 IconButton(
                   onPressed: () {},
