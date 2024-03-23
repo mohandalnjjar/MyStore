@@ -16,10 +16,11 @@ abstract class AppStyles {
       fontSize: 18,
       overflow: TextOverflow.ellipsis);
   static const TextStyle styleSemiBold35 = TextStyle(
-      fontWeight: FontWeight.w600,
-      fontSize: 35,
-      overflow: TextOverflow.ellipsis,
-      color: Colors.red,);
+    fontWeight: FontWeight.w600,
+    fontSize: 35,
+    overflow: TextOverflow.ellipsis,
+    color: Colors.red,
+  );
 
   static const TextStyle styleReqular19 = TextStyle(
     fontSize: 19,
@@ -33,4 +34,9 @@ abstract class AppStyles {
 
   static const TextStyle styleReqularGreen16 =
       TextStyle(color: Colors.green, fontWeight: FontWeight.w600, fontSize: 16);
+
+  static const TextStyle styleSemiBold15 = TextStyle(
+      fontWeight: FontWeight.w600,
+      fontSize: 15,
+      overflow: TextOverflow.ellipsis);
 }
