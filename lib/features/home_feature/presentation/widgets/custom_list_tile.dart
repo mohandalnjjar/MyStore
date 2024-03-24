@@ -4,7 +4,8 @@ import 'package:shop/features/home_feature/data/models/list_tile_model.dart';
 
 class CustomListTile extends StatelessWidget {
   const CustomListTile({
-    super.key, required this.listTileModel,
+    super.key,
+    required this.listTileModel,
   });
 
   final ListTileModel listTileModel;

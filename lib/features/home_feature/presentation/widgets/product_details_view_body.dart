@@ -1,7 +1,7 @@
 import 'package:fancy_shimmer_image/fancy_shimmer_image.dart';
 import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
 import 'package:shop/core/utils/widgets/app_styles.dart';
+import 'package:shop/features/home_feature/presentation/widgets/custom_heart_widget.dart';
 
 class ProductDetailsViewBody extends StatelessWidget {
   const ProductDetailsViewBody({
@@ -56,19 +56,9 @@ class ProductDetailsViewBody extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Container(
+                CustomHeart(
                   height: 42,
-                  width: 42,
-                  decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(
-                      50,
-                    ),
-                    color: Colors.green.withOpacity(0.5),
-                  ),
-                  child: IconButton(
-                    onPressed: () {},
-                    icon: const Icon(IconlyLight.heart),
-                  ),
+                  color: Colors.green.withOpacity(0.5),
                 ),
                 const SizedBox(
                   width: 7,

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:shop/core/utils/app_assets.dart';
 import 'package:shop/features/home_feature/data/models/list_tile_model.dart';
@@ -9,7 +8,7 @@ class GeneralListSection extends StatelessWidget {
     super.key,
   });
 
-static List<ListTileModel> dataList = [
+  static List<ListTileModel> dataList = [
     ListTileModel(
       title: 'All Orders',
       imagePath: AppAssets.order,

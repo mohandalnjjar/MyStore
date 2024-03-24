@@ -17,9 +17,6 @@ abstract class ThemeRepo {
             ? AppColors.kDarktScaffoldColor
             : AppColors.kLightScaffoldColor,
       ),
-
-
-      
       inputDecorationTheme: InputDecorationTheme(
         contentPadding: const EdgeInsets.all(15),
         enabledBorder: OutlineInputBorder(

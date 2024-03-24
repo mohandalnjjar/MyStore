@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iconly/iconly.dart';
 import 'package:shop/core/utils/widgets/app_styles.dart';
+import 'package:shop/features/home_feature/presentation/widgets/custom_heart_widget.dart';
 import 'package:shop/features/home_feature/presentation/widgets/quantity_buttom_sheet.dart';
 
 class CartItem extends StatelessWidget {
@@ -72,13 +73,7 @@ class CartItem extends StatelessWidget {
                         ),
                         padding: EdgeInsets.zero,
                       ),
-                      IconButton(
-                        onPressed: () {},
-                        icon: const Icon(
-                          IconlyLight.heart,
-                        ),
-                        padding: EdgeInsets.zero,
-                      ),
+                      const CustomHeart(),
                       IconButton(
                         onPressed: () {},
                         icon: const Icon(
