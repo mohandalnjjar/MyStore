@@ -58,7 +58,7 @@ class LatestProduct extends StatelessWidget {
                             fit: BoxFit.scaleDown,
                             child: Text(
                               r'12199$',
-                              style: AppStyles.styleReqularGreen16
+                              style: AppStyles.styleSemiGreen17
                                   .copyWith(fontSize: 30),
                               overflow: TextOverflow.ellipsis,
                             ),

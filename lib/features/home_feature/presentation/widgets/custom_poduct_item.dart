@@ -46,7 +46,7 @@ class CustomProductItem extends StatelessWidget {
               flex: 3,
               child: Text(
                 r'$199.3',
-                style: AppStyles.styleReqularGreen16,
+                style: AppStyles.styleSemiGreen17,
               ),
             ),
             Flexible(

@@ -56,9 +56,15 @@ class ProfileViweBody extends StatelessWidget {
             child: ElevatedButton.icon(
               onPressed: () {},
               icon: const Icon(IconlyLight.logout),
-              label: const Text('Logout'),
+              label: const Text(
+                'Logout',
+                style: AppStyles.styleReqular16,
+              ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
               ),
             ),
           ),
