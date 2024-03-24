@@ -11,3 +11,9 @@ abstract class AppColors {
   static const Color kDarktScaffoldColor = Color.fromARGB(255, 9, 3, 27);
   static const Color kdarkPrimaryColor = Color.fromARGB(255, 94, 75, 236);
 }
+
+//ROUTERS PATHS :
+
+const kMainRouter = '/';
+
+const kProductDeatialRouter = '/kProductViewRouter';

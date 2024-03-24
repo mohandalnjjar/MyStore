@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:shop/features/home_feature/presentation/views/root_view.dart';
+import 'package:shop/core/utils/app_router.dart';
 import 'package:shop/features/theme_Feature/manager/theme_provider/theme_provider.dart';
 import 'package:shop/features/theme_Feature/data/repos/app_theme.dart';
 
@@ -20,12 +20,12 @@ class MyStore extends StatelessWidget {
         )
       ],
       child: Consumer<ThemeProvider>(builder: (context, themeProvider, child) {
-        return MaterialApp(
+        return MaterialApp.router(
           title: 'My Store',
           debugShowCheckedModeBanner: false,
           theme: ThemeRepo.theme(
               isDarkTheme: themeProvider.getDarkTheme, context: context),
-          home: const RootView(),
+          routerConfig: AppRouterConfig.router,
         );
       }),
     );

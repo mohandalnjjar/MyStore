@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
+import 'package:shop/core/utils/constance.dart';
 import 'package:shop/core/utils/widgets/app_styles.dart';
 import 'package:shop/features/home_feature/presentation/widgets/categorey_section.dart';
 import 'package:shop/features/home_feature/presentation/widgets/home_view_swiper_section.dart';
@@ -38,8 +40,12 @@ class HomeViewBody extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 10),
               child: Consumer<ThemeProvider>(
                 builder: (context, themeProvider, child) {
-                  return LatestProduct(
-                    isdark: themeProvider.getDarkTheme,
+                  return GestureDetector(
+                    onTap: () =>
+                        GoRouter.of(context).push(kProductDeatialRouter),
+                    child: LatestProduct(
+                      isdark: themeProvider.getDarkTheme,
+                    ),
                   );
                 },
               ),
