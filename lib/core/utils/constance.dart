@@ -17,3 +17,6 @@ abstract class AppColors {
 const kMainRouter = '/';
 
 const kProductDeatialRouter = '/kProductViewRouter';
+
+const kWishListViewRouter = '/kWishListViewRouter';
+

@@ -15,6 +15,7 @@ class CustomProductItem extends StatelessWidget {
           child: AspectRatio(
             aspectRatio: 1 / 1,
             child: FancyShimmerImage(
+                boxFit: BoxFit.contain,
                 imageUrl:
                     'https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
           ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:shop/core/utils/app_assets.dart';
+import 'package:shop/core/utils/constance.dart';
 import 'package:shop/features/home_feature/data/models/list_tile_model.dart';
 import 'package:shop/features/home_feature/presentation/widgets/custom_list_tile.dart';
 
@@ -12,22 +13,22 @@ class GeneralListSection extends StatelessWidget {
     ListTileModel(
       title: 'All Orders',
       imagePath: AppAssets.order,
-      onPressed: () {},
+      approuter: '',
     ),
     ListTileModel(
       title: 'Wish List',
       imagePath: AppAssets.wishlist,
-      onPressed: () {},
+      approuter: kWishListViewRouter,
     ),
     ListTileModel(
       title: 'Viewed Recently',
       imagePath: AppAssets.recent,
-      onPressed: () {},
+      approuter: '',
     ),
     ListTileModel(
       title: 'Address',
       imagePath: AppAssets.address,
-      onPressed: () {},
+      approuter: '',
     ),
   ];
 

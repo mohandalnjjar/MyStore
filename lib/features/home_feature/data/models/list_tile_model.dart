@@ -1,10 +1,12 @@
 class ListTileModel {
   final String title, imagePath;
-  final void Function() onPressed;
+  final String approuter;
+  final void Function()? onpressed;
 
-  ListTileModel({
+  const ListTileModel({
+    this.onpressed,
     required this.title,
     required this.imagePath,
-    required this.onPressed,
+    required this.approuter,
   });
 }
