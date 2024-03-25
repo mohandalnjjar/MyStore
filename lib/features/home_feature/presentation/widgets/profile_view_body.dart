@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:iconly/iconly.dart';
 import 'package:provider/provider.dart';
 import 'package:shop/core/utils/app_assets.dart';
@@ -54,7 +55,6 @@ class ProfileViweBody extends StatelessWidget {
           ),
           Center(
             child: ElevatedButton.icon(
-              onPressed: () {},
               icon: const Icon(IconlyLight.logout),
               label: const Text(
                 'Logout',
@@ -62,10 +62,74 @@ class ProfileViweBody extends StatelessWidget {
               ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
               ),
+              onPressed: () async {
+                await showDialog(
+                  context: context,
+                  builder: (context) => AlertDialog(
+                    elevation: 0,
+                    backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+                    content: Column(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Flexible(
+                          child: FittedBox(
+                            fit: BoxFit.scaleDown,
+                            child: SizedBox(
+                              height: MediaQuery.sizeOf(context).height * .16,
+                              child: AspectRatio(
+                                aspectRatio: 1,
+                                child: Image.asset(
+                                  AppAssets.logOut,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        const Padding(
+                          padding: EdgeInsets.symmetric(vertical: 14),
+                          child: Text(
+                            'Confirm LogOut',
+                            style: AppStyles.styleSemiBold18,
+                          ),
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            ElevatedButton(
+                              onPressed: () {
+                                context.pop();
+                              },
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor:
+                                    Theme.of(context).scaffoldBackgroundColor,
+                              ),
+                              child: const Text(
+                                'Cancle',
+                                style: AppStyles.styleSemiBold15,
+                              ),
+                            ),
+                            const SizedBox(
+                              width: 10,
+                            ),
+                            ElevatedButton(
+                              onPressed: () {},
+                              style: ElevatedButton.styleFrom(
+                                backgroundColor:
+                                    Theme.of(context).scaffoldBackgroundColor,
+                              ),
+                              child: const Text(
+                                'Ok',
+                                style: AppStyles.styleSemiBold15,
+                              ),
+                            ),
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
+                );
+              },
             ),
           ),
         ],
