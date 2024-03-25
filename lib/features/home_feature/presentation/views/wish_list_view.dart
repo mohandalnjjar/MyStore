@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:iconly/iconly.dart';
-import 'package:shop/features/home_feature/presentation/widgets/empty_wish_list_view_body.dart';
+import 'package:shop/core/utils/app_assets.dart';
+import 'package:shop/features/home_feature/presentation/widgets/Custom_empty_view.dart';
 import 'package:shop/features/home_feature/presentation/widgets/not_wish_list_view_body.dart';
 
 class WishListView extends StatelessWidget {
   const WishListView({super.key});
-  final bool isEmpty = false;
+  final bool isEmpty = true;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +24,13 @@ class WishListView extends StatelessWidget {
               ],
             ),
       body: isEmpty
-          ? const EmptyWishViewBody()
+          ? CustomEmptyView(
+              title: 'Whoops',
+              subtitle: 'Your Wish List Empty',
+              buttonTitle: 'Make a Wish Now',
+              onpressed: () {},
+              image: AppAssets.emptyCart,
+            )
           : const NotEmptyWishListViewBody(),
     );
   }

@@ -13,10 +13,11 @@ class CategoreySection extends StatelessWidget {
     final List<CategoryModel> categoryData = [
       CategoryModel(image: AppAssets.phone, name: 'Phones'),
       CategoryModel(image: AppAssets.laptop, name: 'laptops'),
-      CategoryModel(image: AppAssets.smartWatch, name: 'Watchs'),
+      CategoryModel(image: AppAssets.books, name: 'Books'),
+      CategoryModel(image: AppAssets.tShirt, name: 'clothes'),
       CategoryModel(image: AppAssets.shose, name: 'shose'),
       CategoryModel(image: AppAssets.electronics, name: 'electronics'),
-      CategoryModel(image: AppAssets.tShirt, name: 'clothes'),
+      CategoryModel(image: AppAssets.smartWatch, name: 'Watchs'),
       CategoryModel(image: AppAssets.cosmetics, name: 'cosmetics'),
     ];
 

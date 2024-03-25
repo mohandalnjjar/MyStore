@@ -23,7 +23,7 @@ class GeneralListSection extends StatelessWidget {
     ListTileModel(
       title: 'Viewed Recently',
       imagePath: AppAssets.recent,
-      approuter: '',
+      approuter: kViewedRecentlyViewRouter,
     ),
     ListTileModel(
       title: 'Address',

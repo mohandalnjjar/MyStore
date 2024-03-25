@@ -23,4 +23,5 @@ abstract class AppAssets {
   static String books = 'assets/images/category_images/books.jpg';
 
   static String cosmetics = 'assets/images/category_images/cosmetics.jpg';
+
 }
