@@ -5,6 +5,17 @@ abstract class ThemeRepo {
   static ThemeData theme(
       {required bool isDarkTheme, required BuildContext context}) {
     return ThemeData(
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        
+        
+        style: ElevatedButton.styleFrom(
+          
+          backgroundColor: Colors.green,
+          elevation: 0,
+          foregroundColor: Colors.white,
+          
+        ),
+      ),
       scaffoldBackgroundColor: isDarkTheme
           ? AppColors.kDarktScaffoldColor
           : AppColors.kLightScaffoldColor,
@@ -18,6 +29,10 @@ abstract class ThemeRepo {
             : AppColors.kLightScaffoldColor,
       ),
       inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: isDarkTheme
+            ? AppColors.kdarkCardColor
+            : Colors.grey.withOpacity(0.2),
         contentPadding: const EdgeInsets.all(15),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(13),

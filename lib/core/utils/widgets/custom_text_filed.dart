@@ -31,6 +31,7 @@ class _CustomTextFromFiledState extends State<CustomTextFromFiled> {
     return TextField(
       controller: textFieldController,
       decoration: InputDecoration(
+        filled: false,
         suffixIcon: IconButton(
           onPressed: () {
             textFieldController.clear();

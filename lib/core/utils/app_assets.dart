@@ -24,6 +24,7 @@ abstract class AppAssets {
 
   static String cosmetics = 'assets/images/category_images/cosmetics.jpg';
 
+  static String logOut = 'assets/images/logout.png';
 
- static String logOut='assets/images/logout.png';
+  static String login = 'assets/authorization/login.jpg';
 }

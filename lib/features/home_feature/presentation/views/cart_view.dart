@@ -35,7 +35,7 @@ class CartView extends StatelessWidget {
               buttonTitle: 'Shopping Now',
               image: AppAssets.emptyCart,
             )
-          : const NotEMptyCartViewBody(),
+          : const CartViewBody(),
       bottomSheet: isEmpty ? null : const CartCheckOut(),
     );
   }

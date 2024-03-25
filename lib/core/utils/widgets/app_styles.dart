@@ -31,6 +31,11 @@ abstract class AppStyles {
     overflow: TextOverflow.ellipsis,
     color: Colors.red,
   );
+  static const TextStyle styleSemiBold36 = TextStyle(
+    fontWeight: FontWeight.w600,
+    fontSize: 35,
+    overflow: TextOverflow.ellipsis,
+  );
 
   static const TextStyle styleReqular19 = TextStyle(
     fontSize: 19,

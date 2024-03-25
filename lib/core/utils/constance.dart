@@ -14,7 +14,11 @@ abstract class AppColors {
 
 //ROUTERS PATHS :
 
-const String kMainRouter = '/';
+const String kloginRouter = '/';
+
+const String kHomeRouter = '/kHomeRouter';
+
+
 
 const String kProductDeatialRouter = '/kProductViewRouter';
 

@@ -7,10 +7,11 @@ class CustomEmptyView extends StatelessWidget {
     required this.title,
     required this.subtitle,
     this.onpressed,
-    required this.buttonTitle, required this.image,
+    required this.buttonTitle,
+    required this.image,
   });
 
-  final String title, subtitle, buttonTitle ,image;
+  final String title, subtitle, buttonTitle, image;
   final void Function()? onpressed;
 
   @override
@@ -43,7 +44,8 @@ class CustomEmptyView extends StatelessWidget {
           ElevatedButton(
             onPressed: onpressed,
             style: ElevatedButton.styleFrom(
-              backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+              // backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+              elevation: 0,
             ),
             child: Text(buttonTitle),
           )

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shop/features/home_feature/presentation/widgets/cart_item_widget.dart';
 
-class NotEMptyCartViewBody extends StatelessWidget {
-  const NotEMptyCartViewBody({
+class CartViewBody extends StatelessWidget {
+  const CartViewBody({
     super.key,
   });
 

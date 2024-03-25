@@ -61,8 +61,8 @@ class ProfileViweBody extends StatelessWidget {
                 style: AppStyles.styleReqular16,
               ),
               style: ElevatedButton.styleFrom(
-                backgroundColor: Theme.of(context).scaffoldBackgroundColor,
-              ),
+                  // backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+                  ),
               onPressed: () async {
                 await showDialog(
                   context: context,
@@ -100,10 +100,6 @@ class ProfileViweBody extends StatelessWidget {
                               onPressed: () {
                                 context.pop();
                               },
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor:
-                                    Theme.of(context).scaffoldBackgroundColor,
-                              ),
                               child: const Text(
                                 'Cancle',
                                 style: AppStyles.styleSemiBold15,
@@ -114,10 +110,6 @@ class ProfileViweBody extends StatelessWidget {
                             ),
                             ElevatedButton(
                               onPressed: () {},
-                              style: ElevatedButton.styleFrom(
-                                backgroundColor:
-                                    Theme.of(context).scaffoldBackgroundColor,
-                              ),
                               child: const Text(
                                 'Ok',
                                 style: AppStyles.styleSemiBold15,

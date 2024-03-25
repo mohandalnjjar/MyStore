@@ -1,6 +1,6 @@
 import 'package:dynamic_height_grid_view/dynamic_height_grid_view.dart';
 import 'package:flutter/material.dart';
-import 'package:shop/core/utils/widgets/custom_text_form_filed.dart';
+import 'package:shop/core/utils/widgets/custom_text_filed.dart';
 import 'package:shop/features/home_feature/presentation/widgets/custom_poduct_item.dart';
 
 class SearchViewBody extends StatelessWidget {
