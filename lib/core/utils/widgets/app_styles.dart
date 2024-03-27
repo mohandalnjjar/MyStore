@@ -52,11 +52,21 @@ abstract class AppStyles {
     overflow: TextOverflow.ellipsis,
   );
 
-  static const TextStyle styleSemiGreen17 =
-      TextStyle(color: Colors.green, fontWeight: FontWeight.w800, fontSize: 17);
+  static const TextStyle styleSemiGreen17 = TextStyle(
+    color: Colors.green,
+    fontWeight: FontWeight.w800,
+    fontSize: 17,
+  );
 
   static const TextStyle styleSemiBold15 = TextStyle(
-      fontWeight: FontWeight.w600,
-      fontSize: 15,
-      overflow: TextOverflow.ellipsis);
+    fontWeight: FontWeight.w600,
+    fontSize: 15,
+    overflow: TextOverflow.ellipsis,
+  );
+  static const TextStyle styleSemiBold14grey = TextStyle(
+    fontWeight: FontWeight.w600,
+    fontSize: 14,
+    color: Colors.blueGrey,
+    overflow: TextOverflow.ellipsis,
+  );
 }

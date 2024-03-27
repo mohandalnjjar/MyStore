@@ -26,5 +26,7 @@ abstract class AppAssets {
 
   static String logOut = 'assets/images/logout.png';
 
-  static String login = 'assets/authorization/login.jpg';
+  static String login = 'assets/authorization/login.png';
+
+  static String google = 'assets/images/google.png';
 }

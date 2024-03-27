@@ -6,14 +6,15 @@ abstract class ThemeRepo {
       {required bool isDarkTheme, required BuildContext context}) {
     return ThemeData(
       elevatedButtonTheme: ElevatedButtonThemeData(
-        
-        
         style: ElevatedButton.styleFrom(
-          
-          backgroundColor: Colors.green,
+          backgroundColor:
+              isDarkTheme ? AppColors.kdarkCardColor : Colors.green,
           elevation: 0,
           foregroundColor: Colors.white,
-          
+          padding: const EdgeInsets.all(10),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
         ),
       ),
       scaffoldBackgroundColor: isDarkTheme

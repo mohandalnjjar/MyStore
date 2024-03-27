@@ -1,18 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:iconly/iconly.dart';
 
 class CustomTextFromField extends StatelessWidget {
   const CustomTextFromField({
     super.key,
+    required this.hint,
+    required this.icon,
+    this.keyBordType,
+    this.onSaved,
+    this.validator,
   });
 
+  final String hint;
+  final Widget icon;
+  final TextInputType? keyBordType;
+  final void Function(String?)? onSaved;
+  final String? Function(String?)? validator;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      keyboardType: keyBordType,
+      onSaved: onSaved,
+      validator: validator,
       decoration: InputDecoration(
         filled: true,
-        prefixIcon: const Icon(IconlyLight.message),
-        hintText: 'Emial ID',
+        prefixIcon: icon,
+        hintText: hint,
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(

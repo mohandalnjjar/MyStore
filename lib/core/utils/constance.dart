@@ -18,8 +18,6 @@ const String kloginRouter = '/';
 
 const String kHomeRouter = '/kHomeRouter';
 
-
-
 const String kProductDeatialRouter = '/kProductViewRouter';
 
 const String kWishListViewRouter = '/kWishListViewRouter';
