@@ -3,6 +3,7 @@ import 'package:iconly/iconly.dart';
 import 'package:shop/core/utils/validators.dart';
 import 'package:shop/core/utils/widgets/app_styles.dart';
 import 'package:shop/core/utils/widgets/custom_text_form_field.dart';
+import 'package:shop/core/utils/widgets/password_text_form_filed.dart';
 
 class LoginForm extends StatefulWidget {
   const LoginForm({
@@ -61,7 +62,7 @@ class _LoginFormState extends State<LoginForm> {
           const SizedBox(
             height: 25,
           ),
-          CustomTextFromField(
+          PasswordTextFromField(
             onSaved: (value) {
               pasword = value;
             },
@@ -70,9 +71,7 @@ class _LoginFormState extends State<LoginForm> {
             },
             keyBordType: TextInputType.visiblePassword,
             hint: 'Password',
-            icon: const Icon(
-              IconlyLight.lock,
-            ),
+            prefixIcon: const Icon(IconlyLight.lock),
           ),
           const SizedBox(
             height: 10,

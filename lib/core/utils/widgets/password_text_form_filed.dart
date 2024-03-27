@@ -1,31 +1,48 @@
 import 'package:flutter/material.dart';
 
-class CustomTextFromField extends StatelessWidget {
-  const CustomTextFromField({
+class PasswordTextFromField extends StatefulWidget {
+  const PasswordTextFromField({
     super.key,
     required this.hint,
-    required this.icon,
+    required this.prefixIcon,
     this.keyBordType,
     this.onSaved,
     this.validator,
   });
 
   final String hint;
-  final Widget icon;
+  final Widget prefixIcon;
 
   final TextInputType? keyBordType;
   final void Function(String?)? onSaved;
   final String? Function(String?)? validator;
+
+  @override
+  State<PasswordTextFromField> createState() => _PasswordTextFromFieldState();
+}
+
+class _PasswordTextFromFieldState extends State<PasswordTextFromField> {
+  bool obscureText = true;
+
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      keyboardType: keyBordType,
-      onSaved: onSaved,
-      validator: validator,
+      obscureText: obscureText,
+      keyboardType: widget.keyBordType,
+      onSaved: widget.onSaved,
+      validator: widget.validator,
       decoration: InputDecoration(
         filled: true,
-        prefixIcon: icon,
-        hintText: hint,
+        prefixIcon: widget.prefixIcon,
+        suffixIcon: IconButton(
+          icon: Icon(obscureText ? Icons.visibility : Icons.visibility_off),
+          onPressed: () {
+            setState(() {
+              obscureText = !obscureText;
+            });
+          },
+        ),
+        hintText: widget.hint,
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(
